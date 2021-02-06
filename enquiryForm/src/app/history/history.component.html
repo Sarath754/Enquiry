@@ -7,43 +7,30 @@
 
 
 <table>
-    <tr>
-
-        <td>Name</td>
-
-        <td>Ph No</td>
-
-        <td>email</td>
-
-        <td>message</td>
 
 
-    </tr>
+  <tr>
 
 
+    <td>Name</td>
+    <td>Ph No</td>
+    <td>email</td>
+    <td>message</td>
+
+
+  </tr>
 
 
 
+  <tr *ngFor="let item of enquiries">
 
 
+    <td>{{item.name}}</td>
+    <td>{{item.phonenumber}}</td>
+    <td>{{item.email}}</td>
+    <td>{{item.message}}</td>
 
-
-
-
-
-
-
-    <tr *ngFor="let item of enquiries">
-
-        <td>{{item.name}}</td>
-
-        <td>{{item.phonenumber}}</td>
-
-        <td>{{item.email}}</td>
-
-        <td>{{item.message}}</td>
-
-    </tr>
+  </tr>
 
 
 

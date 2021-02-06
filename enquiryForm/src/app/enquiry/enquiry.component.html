@@ -1,7 +1,7 @@
 <!-- <p>enquiry works!</p> -->
 
 
-<div class="container">
+<div id="one" class="container">
 
     <div class="jumbotron">
 
@@ -19,6 +19,12 @@
 
             </div>
 
+            <div id="emailHelp" *ngIf="enquiryform.controls.name.touched && enquiryform.controls.name.errors "
+                style="color: red;" class="form-text"> name is required *</div>
+               
+
+
+
             <div class="mb-3">
 
                 <label for="">Phone Number</label>
@@ -26,6 +32,11 @@
                 <input type="text" formControlName="phoneNumber" name="phonenumber" id="" class="form-control">
 
             </div>
+
+            <div id="emailHelp" *ngIf="enquiryform.controls.phoneNumber.touched && enquiryform.controls.phoneNumber.errors "
+            style="color: red;" class="form-text"> PhoneNumber is required *</div>
+           
+
 
 
             <div class="mb-3">
@@ -37,6 +48,12 @@
             </div>
 
 
+            <div id="emailHelp" *ngIf="enquiryform.controls.email.touched && enquiryform.controls.email.errors "
+            style="color: red;" class="form-text">Email is required *</div>
+           
+
+
+
             <div class="mb-3">
 
                 <label for="">Message</label>
@@ -44,6 +61,11 @@
                 <input type="text" formControlName="message" name="message" id="" class="form-control">
 
             </div>
+
+            <div id="emailHelp" *ngIf="enquiryform.controls.message.touched && enquiryform.controls.message.errors "
+            style="color: red;" class="form-text"> Message is required *</div>
+           
+
 
             <hr>
             <div class="mb-3">

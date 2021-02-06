@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { EnquiryService } from '../services/enquiry.service';
 
@@ -12,13 +12,13 @@ export class EnquiryComponent implements OnInit {
 
 enquiryform=this.fb.group({
 
-name:[""],
+name:["",[Validators.required]],
 
-phoneNumber:[""],
+phoneNumber:["",[Validators.required]],
 
-email:[""],
+email:["",[Validators.required]],
 
-message:[""],
+message:["",[Validators.required]],
 
 
 })
