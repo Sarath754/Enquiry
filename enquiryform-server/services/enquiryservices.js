@@ -16,7 +16,7 @@ return 1;
  
 }
  
-let getEnquiries = () => {
+let getEnquiries =  () => {
 
     return details
   }
