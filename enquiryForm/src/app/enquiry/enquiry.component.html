@@ -1,11 +1,11 @@
 <!-- <p>enquiry works!</p> -->
 
 
-<div id="one" class="container">
+<div id="two" class="container">
 
     <div class="jumbotron">
 
-        <h1>ENQUIRY FORM</h1>
+        <h1 id="one">ENQUIRY FORM</h1>
 
 
         <form [formGroup]="enquiryform">
@@ -15,7 +15,7 @@
 
             <div class="mb-3">
 
-                <label for=""> Name</label>
+                <label for=""><strong>Name</strong> </label>
 
                 <input type="text" formControlName="name" name="name" id="" class="form-control">
 
@@ -33,7 +33,7 @@
 
             <div class="mb-3">
 
-                <label for="">Phone Number</label>
+                <label for=""><strong>Phone Number</strong> </label>
 
                 <input type="text" formControlName="phoneNumber" name="phonenumber" id="" class="form-control">
 
@@ -49,7 +49,7 @@
 
             <div class="mb-3">
 
-                <label for="">E-mail</label>
+                <label for=""><strong> E-mail</strong></label>
 
                 <input type="text" formControlName="email" name="email" id="" class="form-control">
 
@@ -64,17 +64,18 @@
            
             <div class="mb-3">
 
-                <label for="">Message</label>
+                <label for=""><strong>Message</strong> </label>
 
-                <input type="text" formControlName="message" name="message" id="" class="form-control">
+                <textarea formControlName="message"  class="form-control transparent-input" placeholder="Leave a message here...!!" name="floatingTextarea" rows="4"
+                cols="40"></textarea>
 
+               
             </div>
 
            
             <div id="emailHelp" *ngIf="enquiryform.controls.message.touched && enquiryform.controls.message.errors "
             style="color: red;" class="form-text"> Message is required *</div>
            
-
             <hr>
 
             

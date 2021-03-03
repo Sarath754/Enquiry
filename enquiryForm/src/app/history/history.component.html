@@ -1,6 +1,7 @@
+
 <!-- <p>history works!</p> -->
 
-<head>
+<!-- <head>
 
 
 </head>
@@ -35,4 +36,57 @@
 
 
 
+</table> -->
+<!-- <div class=background-image>
+
+  <h1>Person Details</h1>
+  <table class="content-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Phone No</th>
+        <th>Email</th>
+        <th >Message</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of  enquiries">
+        <td>{{item.name}}</td>
+        <td>{{item.phonenumber}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.message}}</td>
+
+
+      </tr>
+    </tbody>
+  </table>
+
+</div> -->
+
+
+
+
+ 
+  <h1 class="one"> HISTORY ! </h1>
+  <hr style="height:3px;background-color:rgb(198, 231, 12)">
+  <br>
+<table>
+  <thead>
+  <tr>
+      <td>Name</td>
+      <td>Email</td>
+      <td>Phone no</td>
+      <td>Message</td>
+
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let item of enquiries">
+      <td>{{item.name}}</td>
+      <td>{{item.email}}</td>
+      <td>{{item.phonenumber}}</td>
+      <td>{{item.message}}</td>
+
+  </tr>
+</tbody>
 </table>
